@@ -1,0 +1,273 @@
+/* Header styling */
+.header {
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+}
+
+.header .logo {
+    width: 25%;
+    color: #000000;
+}
+
+.header ul {
+    text-align: right;
+    display: flex;
+}
+
+.header li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.header li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styling for undermenuer */
+.header .submenu {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    top: 100%;
+    left: 0;
+    width: max-content;
+}
+
+.header li:hover .submenu {
+    display: block;
+}
+
+.header .submenu li {
+    position: relative;
+}
+
+.header .submenu li:hover {
+    background-color: #f4f4f4;
+}
+
+.header .submenu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Styling for hero-sektionen */
+.hero {
+    background: url(IMG/fe.png) center/cover no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+
+.text-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.text-box h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Styling for flex-container */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: #060505;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    margin: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2 {
+    color: #777474;
+    font-size: 24px;
+}
+
+.container p {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.container img {
+    max-width: 60%;
+    max-height: 200px;
+}
+
+/* Styling for nyhedsbrev-sektionen */
+.container {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #063445;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #063445;
+}
+
+
+/* Styling for footer-sektionen */
+    .footer {
+        background: #000;
+        color: #000000;
+        padding: 20px 40px;
+        display: flex;
+       
+    }
+    .footer-logo {
+        width: 25%;
+        display: flex;
+        align-items: center;
+    }
+    .footer-logo img {
+        width: 100%;
+        display: block;
+        margin: 0 auto; 
+    }
+    .footer-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+    }
+    .footer-menu li {
+        margin: 0 10px;
+    }
+    .footer-menu a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+
+/* ------ artikel 1 ------*/
+.text-and-images {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.text {
+    flex: 1;
+    padding-right: 20px; 
+}
+
+.image {
+    flex: 1; 
+}
+
+.small-image {
+    width: 400px; 
+    height: auto; 
+}
+
+.small-image2 {
+    width: 400px;
+    height: auto;
+    
+}
+
+
+/*----------- nyhedsbrev og kontakt ---------*/
+.container {
+    display: flex;
+}
+
+.left-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-side {
+    flex: 1;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+.submit-button {
+    display: block;
+    background-color: #063445;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.info {
+    list-style: none;
+    padding: 0;
+}
+
+.info li {
+    margin-bottom: 10px;
+}
